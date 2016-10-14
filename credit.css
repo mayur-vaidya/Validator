@@ -1,0 +1,48 @@
+.table-border {
+  background: #FDF4F7;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.input-fields {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.input-disabled-fields {
+  background: #E0DDDD;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.input-fields:focus {
+  outline: none;
+}
+
+.submit-now {
+  background: #000000;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+.error {
+  color: red;
+  display: block;
+}
+
+.form-heading {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.labels {
+  font-size: 20px;
+  padding: 15px 10px;
+}
