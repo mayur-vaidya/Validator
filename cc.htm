@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Credit Card</title>
+<link rel="stylesheet" href="credit.css">
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+<script src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>
+<script src="ccjs.js">
+</script>
+</head>
+<body>
+
+<div align="center" >
+  <form id="myform">
+    <table align="center" class="table-border">
+      <th class="form-heading" colspan="4">Form to check validation for Credit Card.</th>
+      <tr>
+        <td class="labels"> Name: </td>
+        <td><input class="input-fields full-name" name="nameField" placeholder="Full Name"></td>
+        <td class="labels"> E-Mail: </td>
+        <td><input class="input-fields" name="emailField" placeholder="E-Mail ID"></td>
+      </tr>
+      <tr>
+        <td class="labels"><label for="field"> Credit-Card Number: </label></td>
+        <td colspan="3"><input class="input-fields" style="width:550px" id="field" name="cardField" placeholder="Credit Card No."></td>
+      </tr>
+      <tr>
+        <td class="labels"> Expiry Date: </td><td><input type="input" class="input-fields" name="expireField" placeholder="MM/YY"></td>
+        <td class="labels"> CVV: </td><td><input type="input" class="input-fields" name="cvvField" placeholder="3-digit CVV No."></td>
+      </tr>
+      <tr>
+        <td class="labels"> Type in address: </td><td><input class="input-fields" id="geocomplete" type="text" placeholder="Type in an address" name="typeAddress"/></td>
+        <td class="labels"> City: </td><td><input type="text" class="input-disabled-fields" name="locality" disabled/ placeholder="Disabled"></td>
+      </tr>
+      <tr>
+        <td class="labels"> State: </td><td><input type="text" class="input-disabled-fields" name="administrative_area_level_1" disabled/ placeholder="Disabled"></td>
+        <td class="labels"> Country: </td><td><input type="text" class="input-disabled-fields" name="country" disabled/ placeholder="Disabled"></td>
+      </tr>
+      <tr><td colspan="4" align="center"><button type="submit" class="submit-now">Submit</button> </td></tr>
+  </form>
+</div>
+<div class="map_canvas"></div>
+</body>
+</html>
