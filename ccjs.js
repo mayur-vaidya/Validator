@@ -8,11 +8,7 @@ $.validator.addMethod("anyDate",
     function(value, element) {
         return value.match(/^(0?[1-9]|1[012])[/]?\d{2}$/);
     },
-<<<<<<< Updated upstream
-    "Please enter a date in given format!"
-=======
     "Please enter a date in required format!"
->>>>>>> Stashed changes
 );
 $.validator.addMethod("limitCvv",
     function(value, element) {
