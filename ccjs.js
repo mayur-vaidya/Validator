@@ -53,7 +53,7 @@ $(".submit-now").click(function() {
     alert("First letter of 'NAME' should be capital!!!");
     }
   if(space == -1) {
-    alert("Please enter your 'Full Name' i.e. name and surname!!!");
+    alert("Please enter your complete name i.e. name and surname!!!");
   }
   if(space != -1) {
     if(fname[space+1] != fname[space+1].toUpperCase()) {
